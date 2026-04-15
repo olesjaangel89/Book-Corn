@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров — Book Corner</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+
+                <button class="burger" id="burgerBtn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="search-item">
+                        <input type="text" class="mobile-search" placeholder="Поиск...">
+                    </li>
+                    <li><a href="./Главная сайта.html">Главная</a></li>
+                    <li><a href="./Блог.html">Блог</a></li>
+                    <li><a href="./Контакты.html">Контакты</a></li>
+                    <li class="cart-wrapper">
+                        <a href="#" class="cart-link" id="cartTriggerMobile">
+                            <span class="cart-icon">Корзина</span>
+                            <span class="cart-count" id="cartCountMobile">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-right desktop-nav">
+                    <div class="search"><input type="text" placeholder="Поиск"></div>
+                    <a href="./Главная сайта.html">Главная</a>
+                    <a href="./Блог.html">Блог</a>
+                    <a href="./Контакты.html">Контакты</a>
+                    <button class="cart-trigger" id="cartTrigger" aria-label="Корзина">
+                        Корзина <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <h1>Каталог товаров</h1>
+
+        <aside>
+            <h3>Категории</h3>
+            <ul id="filters">
+                <li><a href="#" class="active" data-cat="all">Все книги</a></li>
+                <li><a href="#" data-cat="classic">Классика</a></li>
+                <li><a href="#" data-cat="fantasy">Фэнтези</a></li>
+                <li><a href="#" data-cat="detective">Детектив</a></li>
+                <li><a href="#" data-cat="children">Детские</a></li>
+            </ul>
+        </aside>
+
+        <main class="catalog-grid">
+            <article class="product-card" data-category="classic" data-id="1" data-title="Белые ночи" data-price="349" data-img="./css/img/Tovar1.png">
+                <img src="./css/img/Tovar1.png" alt="Обложка" class="card-img">
+                <div class="card-title">Белые ночи</div>
+                <div class="card-author">Ф.М. Достоевский</div>
+                <div class="card-desc">Твердый переплет, 128 стр.</div>
+                <div class="card-price">349 ₽</div>
+                <div class="product-actions">
+                    <button class="btn-download" onclick="downloadExcerpt(this, 'Белые ночи')">Фрагмент 1.8 мб</button>
+                    <button class="btn-add">В корзину</button>
+                </div>
+                <div class="book-links"><a href="./Страница с книгой.html">Подробнее...</a></div>
+            </article>
+
+            <article class="product-card" data-category="fantasy" data-id="2" data-title="Гарри Поттер" data-price="890" data-img="./css/img/Tovar4.png">
+                <img src="./css/img/Tovar4.png" alt="Обложка" class="card-img">
+                <div class="card-title">Гарри Поттер</div>
+                <div class="card-author">Дж. К. Роулинг</div>
+                <div class="card-desc">Иллюстр. издание, 432 стр.</div>
+                <div class="card-price">890 ₽</div>
+                <div class="product-actions">
+                    <button class="btn-download" onclick="downloadExcerpt(this, 'Гарри Поттер')">Фрагмент 2.8 мб</button>
+                    <button class="btn-add">В корзину</button>
+                </div>
+                <div class="book-links"><a href="#">Подробнее...</a></div>
+            </article>
+
+            <article class="product-card" data-category="detective" data-id="3" data-title="Десять негритят" data-price="399" data-img="./css/img/Tovar2.png">
+                <img src="./css/img/Tovar2.png" alt="Обложка" class="card-img">
+                <div class="card-title">Десять негритят</div>
+                <div class="card-author">Агата Кристи</div>
+                <div class="card-desc">Мягкий переплет, 256 стр.</div>
+                <div class="card-price">399 ₽</div>
+                <div class="product-actions">
+                    <button class="btn-download" onclick="downloadExcerpt(this, 'Десять негритят')">Фрагмент 2.4 мб</button>
+                    <button class="btn-add">В корзину</button>
+                </div>
+                <div class="book-links"><a href="#">Подробнее...</a></div>
+            </article>
+
+            <article class="product-card" data-category="classic" data-id="4" data-title="1984" data-price="369" data-img="./css/img/Tovar3.png">
+                <img src="./css/img/Tovar3.png" alt="Обложка" class="card-img">
+                <div class="card-title">1984</div>
+                <div class="card-author">Джордж Оруэлл</div>
+                <div class="card-desc">Коллекц. издание, 320 стр.</div>
+                <div class="card-price">369 ₽</div>
+                <div class="product-actions">
+                    <button class="btn-download" onclick="downloadExcerpt(this, '1984')">Фрагмент 1.4 мб</button>
+                    <button class="btn-add">В корзину</button>
+                </div>
+                <div class="book-links"><a href="#">Подробнее...</a></div>
+            </article>
+
+            <article class="product-card" data-category="children" data-id="5" data-title="Маленький принц" data-price="550" data-img="./css/img/Tovar6.png">
+                <img src="./css/img/Tovar6.png" alt="Обложка" class="card-img">
+                <div class="card-title">Маленький принц</div>
+                <div class="card-author">А. де Сент-Экзюпери</div>
+                <div class="card-desc">С иллюстрациями, 96 стр.</div>
+                <div class="card-price">550 ₽</div>
+                <div class="product-actions">
+                    <button class="btn-download" onclick="downloadExcerpt(this, 'Маленький принц')">Фрагмент 2.1 мб</button>
+                    <button class="btn-add">В корзину</button>
+                </div>
+                <div class="book-links"><a href="#">Подробнее...</a></div>
+            </article>
+
+            <article class="product-card" data-category="fantasy" data-id="6" data-title="Властелин колец" data-price="1200" data-img="./css/img/Tovar5.png">
+                <img src="./css/img/Tovar5.png" alt="Обложка" class="card-img">
+                <div class="card-title">Властелин колец</div>
+                <div class="card-author">Дж. Р. Р. Толкин</div>
+                <div class="card-desc">Коробка, 3 книги, 1200 стр.</div>
+                <div class="card-price">1200 ₽</div>
+                <div class="product-actions">
+                    <button class="btn-download" onclick="downloadExcerpt(this, 'Властелин колец')">Фрагмент 3.5 мб</button>
+                    <button class="btn-add">В корзину</button>
+                </div>
+                <div class="book-links"><a href="#">Подробнее...</a></div>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p>2026 Book Corner. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Ваша корзина</h2>
+                <button class="close-cart" id="cartCloseBtn">✕</button>
+            </div>
+            <div class="cart-items" id="cartItemsList">
+                <p style="text-align:center; color:#888; margin-top:20px;">Корзина пуста</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">Итого: <span id="cartTotal">0</span> ₽</div>
+                <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Java2.js"></script>
+</body>
+</html>

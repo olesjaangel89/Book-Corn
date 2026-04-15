@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с книгой</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Book Corner</div>
+            
+            <button class="burger" id="burgerMenu" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="./Главная сайта.html">Главная</a></li>
+                <li><a href="./Каталог.html">Каталог</a></li>
+                <li><a href="./Блог.html">Блог</a></li>
+                <li><a href="./Контакты.html">Контакты</a></li>
+                <li>
+                    <button class="cart-trigger" id="openCartBtn" aria-label="Открыть корзину">
+                        Корзина <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Белые ночи</h1>
+        
+        <div class="product-block">
+            <div class="product-image">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="slide active"><img src="./css/img/Tovar1.png" alt="Обложка"></div>
+                        <div class="slide"><img src="./css/img/содер.png" alt="Содержание"></div>
+                        <div class="slide"><img src="./css/img/1стр.png" alt="Страница 1"></div>
+                        <div class="slide"><img src="./css/img/2стр.png" alt="Страница 2"></div>
+                    </div>
+                    <button class="slider-btn prev" aria-label="Назад">❮</button>
+                    <button class="slider-btn next" aria-label="Вперед">❯</button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-details">
+                <h2>Фёдор Достоевский</h2>
+                <div class="product-author">Художественная литература - Классика - Повесть</div>
+                <div class="product-price">349 ₽</div>
+                <p class="product-short-desc">
+                    Трогательная история о мечтателе, который за четыре белые ночи петербургского лета
+                     встречает таинственную девушку и переживает самое светлое и печальное чувство в своей жизни.
+                </p>
+                
+                <div class="product-actions">
+                    <!-- data-атрибуты для JS -->
+                    <button class="btn btn-cart" id="addToCart" data-id="1" data-title="Белые ночи" data-price="349">
+                        Добавить в корзину
+                    </button>
+                    <button class="btn btn-download" id="downloadExcerpt">
+                        Скачать ознакомительный фрагмент
+                        <small>PDF  Первая ночь  1.8 МБ</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-section">
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="desc">Описание</button>
+                <button class="tab-btn" data-tab="specs">Характеристики</button>
+                <button class="tab-btn" data-tab="reviews">Отзывы</button>
+            </div>
+
+            <div id="desc" class="tab-panel active">
+                <h3 style="margin-bottom: 1rem; color: #2C1810;">О книге</h3>
+                <p style="margin-bottom: 1rem;">
+                    «Белые ночи» — одна из самых лиричных и светлых повестей Фёдора Достоевского, 
+                    написанная в 1848 году. Это история о мечтателе, живущем в мире своих фантазий, 
+                    который за четыре волшебные ночи петербургского лета встречает Настеньку — девушку, 
+                    ждущую возвращения любимого.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    В этом издании представлен текст по первой прижизненной публикации 1848 года с 
+                    сохранением авторской пунктуации и стилистики. Книга дополнена комментариями 
+                    литературоведа и исторической справкой о петербургском периоде творчества Достоевского.
+                </p>
+                <p>
+                   Идеальный выбор для тех, кто хочет познакомиться с ранним Достоевским или перечитать 
+                   одну из самых поэтичных историй о любви и одиночестве в русской литературе.
+                </p>
+            </div>
+
+            <div id="specs" class="tab-panel">
+                <table class="specs-table">
+                    <tr><th>ISBN</th><td>978-5-17-098765-4</td></tr>
+                    <tr><th>Издательство</th><td>Классика русской литературы</td></tr>
+                    <tr><th>Год издания</th><td>2025</td></tr>
+                    <tr><th>Количество страниц</th><td>128</td></tr>
+                    <tr><th>Тип обложки</th><td>Мягкая обложка, французский клапан</td></tr>
+                    <tr><th>Бумага</th><td>Офсетная, кремовая, плотность 70 г/м²</td></tr>
+                    <tr><th>Формат</th><td>120 × 165 мм</td></tr>
+                    <tr><th>Язык</th><td>Русский</td></tr>
+                    <tr><th>Дополнительно</th><td>Иллюстрации художника А. Бенуа, послесловие литературоведа</td></tr>
+                </table>
+            </div>
+
+            <div id="reviews" class="tab-panel">
+                <div class="review-card">
+                    <div class="review-header"><span class="review-author">Анна К.</span><span class="review-date">10.04.2026</span></div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Отличное издание! Бумага приятная, шрифт комфортный.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"><span class="review-author">Мария Д.</span><span class="review-date">02.04.2026</span></div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Очень нежное оформление. Рекомендую.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Дмитрий С.</span>
+                        <span class="review-date">18 марта 2026</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Купил в подарок девушке — она в восторге. Компактный формат удобно 
+                        брать с собой, а текст без сокращений. Фрагмент скачал заранее, чтобы убедиться в 
+                        качестве — всё отлично. Спасибо магазину!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h2>Корзина</h2>
+                <button class="cart-close" id="closeCartBtn">✕</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="cart-empty">Корзина пуста</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">Итого: <span id="cartTotal">0</span> ₽</div>
+                <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Book Corner. Все права защищены.</p>
+    </footer>
+
+    <script src="./Java3.js"></script>
+</body>
+</html>

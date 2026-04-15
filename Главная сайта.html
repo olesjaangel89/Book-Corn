@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Corner</title>
+    <link rel="stylesheet" href="./style-главная.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="./Главная сайта.html">Book Corner</a>
+            </div>
+            
+            <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="search-item">
+                <input type="text" class="mobile-search" placeholder="Поиск...">
+                </li>
+                <li><a href="./Каталог.html">Каталог</a></li>
+                <li><a href="./Блог.html">Блог</a></li>
+                <li><a href="./Контакты.html">Контакты</a></li>
+                <li class="mobile-cart-item">
+                <button class="cart-trigger" id="cartTriggerMobile" aria-label="Корзина">
+                    Корзина <span class="cart-count" id="cartCountMobile">0</span>
+                </button>
+                </li>
+            </ul>
+            
+            <div class="nav-right desktop-nav">
+                <div class="search"><input type="text" placeholder="Поиск"></div>
+                <a href="./Каталог.html">Каталог</a>
+                <a href="./Блог.html">Блог</a>
+                <a href="./Контакты.html">Контакты</a>
+                <button class="cart-trigger" id="cartTrigger" aria-label="Корзина">
+                    Корзина <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="main-container">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="./css/img/nov1.png" alt="Новинка 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./css/img/nov2.png" alt="Новинка 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./css/img/nov3.png" alt="Новинка 3">
+                    </div>
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)" 
+                aria-label="Предыдущий слайд">‹</button>
+                <button class="slider-btn next" onclick="changeSlide(1)" 
+                aria-label="Следующий слайд">›</button>
+            </div>
+
+            <div class="hero-text">
+                <p class="hero-title">Book<br>Corner</p>
+                <p class="hero-tagline">Читай, вдохновляйся, люби</p>
+                <a href="./Каталог.html" class="btn-catalog">Открыть каталог</a>
+            </div>
+        </div>
+    </section>
+
+     <article class="Advantages">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <article class="view_advantages">
+            <div class="view">
+                <img src="./css/img/assor.png" alt="Ассортимент">
+                <h3 class="advantages-title">Широкий ассортимент</h3>
+                <p>Более 50 000 книг различных жанров. Ознакомьтесь с содержанием перед 
+                    покупкой — скачивайте бесплатные электронные отрывки в удобном формате</p>
+            </div>
+            <div class="view">
+                <img src="./css/img/dost.png" alt="Доставка">
+                <h3 class="advantages-title">Быстрая доставка</h3>
+                <p>Доставляем заказы по городу за 24 часа. Бесплатная доставка при заказе 
+                    от 1000 ₽</p>
+            </div>
+            <div class="view">
+                <img src="./css/img/garant.png" alt="Качество">
+                <h3 class="advantages-title">Гарантия качества</h3>
+                <p>Все книги проходят проверку качества. Возврат или обмен в течение 
+                    14 дней без лишних вопросов</p>
+            </div>
+            <div class="view">
+                <img src="./css/img/ckid.png" alt="Скидки">
+                <h3 class="advantages-title">Система скидок</h3>
+                <p>Накопительная система скидок до 15%. Специальные предложения для 
+                    постоянных клиентов и студентов</p>
+            </div>
+        </article>
+     </article>
+
+    <section class="books-section">
+        <div class="books-container">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <img src="./css/img/Tovar1.png" alt="Белые ночи" class="book-cover">
+                    <h3 class="book-title">Белые ночи</h3>
+                    <p class="book-author">Ф.М.Достоевский</p>
+                    <div class="price">
+                        <div class="price1">Печатная книга: 349р</div>
+                        <button class="Elfrag" id="downloadExcerpt">Скачать фрагмент 
+                            1.8 мб</button>
+                    </div>
+                    <button class="btn-cart">В корзину</button>
+                    <div class="book-links">
+                        <a href="./Страница с книгой.html">Подробнее...</a>
+                        <a href="./Каталог.html">Смотреть больше</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="./css/img/Tovar2.png" alt="Десять негритят" class="book-cover">
+                    <h3 class="book-title">Десять негритят</h3>
+                    <p class="book-author">Агата Кристи</p>
+                    <div class="price">
+                        <div class="price1">Печатная книга: 399р</div>
+                        <button class="Elfrag">Скачать фрагмент 2.4 мб</button>
+                    </div>
+                    <button class="btn-cart">В корзину</button>
+                    <div class="book-links">
+                        <a href="#">Подробнее...</a>
+                        <a href="./Каталог.html">Смотреть больше</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="./css/img/Tovar3.png" alt="1984" class="book-cover">
+                    <h3 class="book-title">1984</h3>
+                    <p class="book-author">Джордж Оруэлл</p>
+                    <div class="price">
+                        <div class="price1">Печатная книга: 369р</div>
+                        <button class="Elfrag">Скачать фрагмент 1.4 мб</button>
+                    </div>
+                    <button class="btn-cart">В корзину</button>
+                    <div class="book-links">
+                        <a href="#">Подробнее...</a>
+                        <a href="./Каталог.html">Смотреть больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h2 class="promo-heading">Подпишитесь на рассылку</h2>
+                    <p class="promo-description">Получайте новости о новинках, эксклюзивные 
+                        скидки и рекомендации книг прямо на почту</p>
+                    <div class="promo-offer">
+                        <span class="discount-badge">Скидка 10%</span>
+                        <span class="offer-text">на первый заказ за подписку!</span>
+                    </div>
+                </div>
+                <form class="subscribe-form">
+                    <div class="form-group">
+                        <label for="email" class="visually-hidden">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите ваш email" required>
+                        <button type="submit" class="subscribe-btn">Подписаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p><span class = "current-year"></span> Book Corner. Учебный проект. Дмитриенко.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal" aria-hidden="true">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>Ваша корзина</h3>
+                <button class="cart-close" id="cartClose" aria-label="Закрыть корзину">
+                    &times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="cart-empty">Корзина пуста</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">Итого: <span id="cartTotal">0</span> ₽</div>
+                <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+    <script src = "./Java.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "A";
+    src: url(./fonts/gabriola.ttf);
+}
+nav{
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+nav ul {
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background-color: rgb(253, 211, 208);
+    border-bottom: 2px solid black;
+}
+.log{
+    position:relative;
+    left: -160px;
+    top: 10px;
+}
+.li-1 {
+    font-family: Arial;
+    position:relative;
+    left: -150px;
+}
+.li-2{
+    font-family: Arial;
+    position: relative;
+    left: 100px;
+}
+.li-3 {
+    font-family: Arial;
+    position:relative;
+    left: -300px;
+}
+.li-1:hover {
+    font-size: 18px;
+}
+.li-2:hover {
+    font-size: 18px
+}
+.li-3:hover {
+    font-size: 18px
+}
+
+nav a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    color:black; 
+}
+body{
+    margin: 0;
+    background-color: rgba(253, 211, 208, 0.881);
+}
+.text{
+    position: absolute;
+    top: 30%;
+    left: 68%;
+}
+.name{
+    margin-top: -50px;
+}
+.name p{
+    font-size: 100px;
+    font-family: "A";
+    margin: 0;
+    height: 70px;
+    margin-left: 40px;
+
+}
+.name2 p{
+    font-size: 100px;
+    font-family: "A";
+    margin: 0;
+    height: 70px;
+    margin-left: 10px;
+}
+.opis h4{
+    margin-top: 80px;
+    font-weight: lighter;
+    font-family: "A";
+    font-size: 35px;
+    margin-left: -35px;
+}
+.kn{
+    width: 350px;
+    height: 78px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: rgba(244, 152, 145, 0.881);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: -50px;
+}
+.kn:hover{
+    width: 356px;
+    height: 84px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: rgba(247, 138, 131, 0.881);
+    font-size: 35px;
+}
+.slider {
+    vertical-align: middle;
+    position: absolute;
+    top: 56%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    max-height: 700px;
+    border-radius: 80px;
+}
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+}
+.slide {
+    min-width: 100%;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+}
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.552);
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.prev {
+    left: 10px; 
+}
+.next {
+    right: 10px; 
+}
+footer{
+    background-color: rgba(255, 255, 255, 0.046);
+    color: rgb(157, 157, 157);
+    bottom: 0;
+    margin-top: 15px;
+}
+footer h3{
+    color: lightgray;
+}
+.infooter{
+    display: flex;
+    font-family:'Bahnschrift';
+    font-weight:lighter;
+}
+
+.onas{
+    width: 70%;
+    margin-right: 80px;
+    margin-left: 25px
+}
+.contacts1{
+    width: 70%;
+}
+.date{
+    color: lightgray;
+    font-family:'Bahnschrift';
+    font-weight:lighter;
+    text-align: center;
+}
+.Tovar{
+    margin-top: 740px; 
+}
+.Tovar1{
+    padding: 10px;
+    margin-left: 160px;
+    width: 300px;
+    height: 630px;
+    border: 3px solid black;
+    line-height: 1em;
+}
+.Tovar2{
+    padding: 10px;
+    margin-top: -655px;
+    margin-left: 605px;
+    width: 300px;
+    height: 630px;
+    border: 3px solid black;
+    line-height: 1em;
+}
+.Tovar3{
+    padding: 10px;
+    margin-top: -656px;
+    margin-left: 1050px;
+    width: 300px;
+    height: 630px;
+    border: 3px solid black;
+    line-height: 1em;
+}
+.kn1{
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(244, 152, 145, 0.425);
+}
+.kn1:hover{
+    margin-left: 25px;
+    width: 110px;
+    height: 45px;
+    border: 2px solid black;
+    background-color: rgba(244, 152, 145, 0.747);
+    font-size: 15px;
+}
+.kn2{
+    margin-left: 25px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(244, 152, 145, 0.425);
+}
+.kn2:hover{
+    margin-left: 25px;
+    width: 110px;
+    height: 45px;
+    border: 2px solid black;
+    background-color: rgba(244, 152, 145, 0.747);
+    font-size: 15px;
+}
+.kn3{
+    margin-top: 10px;
+    margin-left: 90px;
+    width: 100px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(244, 152, 145, 0.425);
+}
+.kn3:hover{
+    margin-left: 90px;
+    width: 110px;
+    height: 25px;
+    border: 2px solid black;
+    background-color: rgba(244, 152, 145, 0.747);
+    font-size: 15px;
+}
+.Kar1{
+    margin-left: -25px;
+}
+.pdr{
+    margin-top: 15px;
+}
+.kn4{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
+.kn4:hover{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color:black;
+}
+.kn5{
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
+.kn5:hover{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color:black;
+}
